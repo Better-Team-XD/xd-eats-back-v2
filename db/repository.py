@@ -20,9 +20,9 @@ def find_all_ingredients():
 
 
 def find_all_matches(ingredient_list, category):
-    return list(db.recipes.aggregate([
+    return list(filter(lambda recipe: recipe["missing"] != len(recipe["ingredients"]), list(db.recipes.aggregate([
         {"$unset": "_id"},
         {"$match": {"category": category}},
         {"$addFields": {"missing": {"$size": {"$setDifference": ["$ingredients", ingredient_list]}}}},
         {"$sort": {"missing": 1}}
-    ]))
+    ]))))
