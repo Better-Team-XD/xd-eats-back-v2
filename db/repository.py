@@ -12,11 +12,11 @@ def insert_recipe(recipe):
 
 
 def find_all_recipes():
-    return list(db.recipes.find({}, {'_id': False}))
+    return list(db.recipes.find({}))
 
 
 def find_all_ingredients():
-    return list(db.ingredients.find({}, {'_id': False}))
+    return list(db.ingredients.find({}))
 
 
 def find_all_matches(ingredient_list, category):
