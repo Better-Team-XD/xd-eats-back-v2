@@ -2,7 +2,7 @@ from flask import Blueprint
 from flask import request
 import service.data_service as data_service
 from api.response_json import parse_json
-
+from api.password import password
 data_api = Blueprint('data_api', __name__, url_prefix='/api/v1')
 
 
@@ -10,6 +10,9 @@ data_api = Blueprint('data_api', __name__, url_prefix='/api/v1')
 def recipes():
     try:
         if request.method == 'POST':
+            if request.headers.get("password") != password:
+                raise ValueError("Wrong API password")
+
             content = request.get_json()
             return parse_json(message=data_service.add_recipe(content), status="SUCCESS")
         else:
