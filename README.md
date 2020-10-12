@@ -1,7 +1,7 @@
 # XD Eats backend
 
 [![flask badge](https://img.shields.io/badge/flask-1.1.2-blue)](https://pypi.org/project/Flask/)
-[![pymongo badge](https://img.shields.io/badge/PyMongo-3.11.0-green)](https://pypi.org/project/pymongo/)
+[![pymongo badge](https://img.shields.io/badge/pymongo-3.11.0-green)](https://pypi.org/project/pymongo/)
 
 ## Project Description
 
