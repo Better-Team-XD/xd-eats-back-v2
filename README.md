@@ -5,7 +5,9 @@
 
 ## Project Description
 
-Backend of XD Eats application (Python version), link to [original Java version](https://github.com/Better-Team-XD/hacknarok-back)
+Backend of XD Eats application (Python version). <br>
+[Link](https://github.com/Better-Team-XD/hacknarok-back) to original Java version <br>
+[Link](https://github.com/Better-Team-XD/hacknarok-web) to frontend
 
 ## API
 ### Add recipe into system
