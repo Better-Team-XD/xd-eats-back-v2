@@ -5,7 +5,8 @@
 
 ## Project Description
 
-Backend of XD Eats application (Python version). <br>
+Backend of XD Eats application (Python version). We gathered data from [przepisy.pl](https://www.przepisy.pl/) just to fill database. We used webscraping script for this purpose<br>
+[Link](https://github.com/Better-Team-XD/hacknarok-script) to webscraping script <br>
 [Link](https://github.com/Better-Team-XD/hacknarok-back) to original Java version <br>
 [Link](https://github.com/Better-Team-XD/hacknarok-web) to frontend
 
