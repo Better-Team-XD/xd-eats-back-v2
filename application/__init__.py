@@ -6,7 +6,7 @@ from api.data_api import data_api
 
 def create_app():
     app = Flask(__name__)
-    CORS(app, resources={r"/api/v1/*": {"origins": "http://localhost:43301"}})
+    CORS(app, resources={r"/api/v1/*": {"origins": "http://localhost:3000"}})
 
     app.register_blueprint(data_api)
 
